@@ -5,7 +5,7 @@ const ProjectDetails = ({ history, match }) => {
     let projectDetails = projects.filter(project => project.id === match.params.id ? project : null)
 
     let listProjectDetails = projectDetails.map((item, i) => {
-        let { title, deployedUrl, githubUrl, image, description, tags } = item
+        let { title, deployedUrl, githubUrl, image, description } = item
 
         return (
             <div className='project-div' key={i}>
