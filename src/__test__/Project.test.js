@@ -1,12 +1,13 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import Project from '../components/Project'
+import ProjectCard from '../components/ProjectCard'
 
 
 const match = { params: { id: 0 } }
+const wrapper = shallow(<ProjectCard match={match} />)
 
-describe("Renders Project component without crashing", () => {
+describe("Renders ProjectCard component without crashing", () => {
     it('Renders Project', () => {
-        mount(<Project match={match} />)
+        expect(wrapper.exists()).toBe(true)
     })
 })

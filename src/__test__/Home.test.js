@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import Home from '../components/Home'
+import Home from '../pages/Home'
 
 
 describe('Home Component renders correct A tags text', () => {

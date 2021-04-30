@@ -1,9 +1,10 @@
 import React from 'react';
 import spockContactData from '../data/spockContactData.json'
+import ContactCard from './ContactCard';
 
 const ContactList = () => {
 
-    const contactInfoList = spockContactData.map((contact, i) => <a key={i} id={contact.platform} href={contact.hyperlink} target='_blank' rel="noreferrer"> {contact.content}</a>)
+    const contactInfoList = spockContactData.map((contact, i) => <ContactCard {...contact} key={i} />)
 
     return (
         <footer className='contact-list'>

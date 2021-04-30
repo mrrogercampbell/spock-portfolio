@@ -1,31 +1,21 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import Contact from '../components/Contact'
+import ContactList from '../components/ContactList'
+import ContactCard from '../components/ContactCard'
 
-const wrapper = mount(<Contact />)
+const contactListWrapper = mount(<ContactList />)
+const contactCardWrapper = mount(<ContactCard />)
 
-describe('Contact Component renders a Form', () => {
-    it('Form Renders', () => {
-        const value = wrapper.find('form')
-        expect(value).toHaveLength(1)
+describe('ContactList Component', () => {
+    it('It Renders', () => {
+        expect(contactListWrapper.exists()).toBe(true)
     })
-    it('Form Renders three inputs', () => {
-        const value = wrapper.find('input')
-        // console.log(value.debug());
-        expect(value).toHaveLength(4)
-    })
+
 })
 
-describe.skip('Form Input Takes input', () => {
-    it('Form takes user input', () => {
-        const value = wrapper.find('form').length
-        // .simulate('change', {
-        //     target: { value: 'blah blah' }
-        // })
-
-        console.log(value)
-        // wrapped.update();
-
-        // expect(wrapped.find('textarea').prop('value')).toEqual('blah blah');
+describe('ContactCard Component', () => {
+    it('It Renders', () => {
+        expect(contactCardWrapper.exists()).toBe(true)
     })
+
 })

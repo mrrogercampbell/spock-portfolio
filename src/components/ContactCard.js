@@ -1,15 +1,15 @@
 import React from 'react';
 
-const ContactCard = () => {
+const ContactCard = ({ platform, hyperlink, content }) => {
     return (
         <div>
             <a
-                id={contact.platform}
-                href={contact.hyperlink}
+                id={platform}
+                href={hyperlink}
                 target='_blank'
                 rel="noreferrer"
             >
-                {contact.content}
+                {content}
             </a>
         </div>
     );
