@@ -66,6 +66,6 @@ describe('Renders correct social media links', () => {
     it('Renders a link for Email Address', () => {
         let wrapper = mount(<Home />)
         let value = wrapper.find('#email-address').prop('href')
-        expect(value).toEqual('email:spock@starfleet.com')
+        expect(value).toEqual('mailto:spock@starfleet.com')
     })
 })

@@ -1,0 +1,53 @@
+#header{
+  display: flex;
+  justify-content: space-around;
+  /* border-bottom: 3px solid white; */
+  background-color: black;
+  margin: -10px -10px 0 -10px;
+  padding-right: 100;
+}
+
+.link-tag{
+  font-size: 20px;
+}
+
+#contact{
+  margin: 50px 0;
+}
+
+#contact-form{
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-input{
+  width: 100px;
+}
+
+body{
+  background: url('../assets/space-bg.jpeg');
+}
+
+a {
+ text-decoration: none;
+ color: black;
+ margin: 15px;
+}
+
+a:hover{
+  border-bottom: 3px solid white ;
+}
+
+h1, h2, p, a {
+  color: white;
+}
+
+h2{
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-container{
+  height: 100vh;
+}
